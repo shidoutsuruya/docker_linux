@@ -20,6 +20,7 @@
 
 * `docker container ls` check created containers ( all means see all containers )
 * `docker container run -it --name [name] [image]` docker create new ubuntu container
+* hello world
 * `docker container exec -it [container] bash` attach in container
 * `docker attach [container]` go into container
 * `docker start [container]` start container
