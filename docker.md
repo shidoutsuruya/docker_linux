@@ -16,8 +16,8 @@
 * `docker image pull [image]:[version]` pull image from repo or dockerhub
 * `docker search [image]` search image
 * `docker image inspect [image]` see more image info
-* `docker image rm [image]` remove image
-* `docker image build -t [new_image]` build my new image
+* `docker image rm [image]` or `docker rmi [image]` remove image
+* `docker image build -t [dockerfile]` build my new image
 * `docker image push [new_image]` push your image into hub
 * `docker image history [image]` see image history
 
