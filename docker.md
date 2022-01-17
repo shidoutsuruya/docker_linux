@@ -1,11 +1,11 @@
-# Docker
+Docker
 
 * `docker login` log in docker repo
 * `docker system info` check docker information
 * `docker --version` or`docker -v` check docker version
 * `docker network ls` see the network configuration
+* `docker network create [name]`create new network(base on bridge)
 * `docker port [container]` set container port
-
 ## Image
 
 * `docker image ls`  check download images
@@ -40,6 +40,7 @@
   * `-p 80:8080` give access port
   * `-d` run but not attach in container
   * `-v [local_path]:[container_path]` use volume to map with the container directory and local directory
+  * `--network [network]` set WLAN
 * `docker attach [container]` go into container
 * `docker start [container]` start container
 * `docker container stop [container]` stop container
@@ -54,7 +55,7 @@
 * `docker rename [old_name] [new name]` rename the container
 * `docker cp [container]:[file_path] [local]` copy file between local and container
 
-![img]()
+![img](C:\Users\max21\Desktop\Python\docker\docker.drawio.png)
 
 ## Volume
 
