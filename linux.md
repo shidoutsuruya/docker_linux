@@ -217,9 +217,8 @@
   * What:`+-=`(add,remove,set exact)
   * Which:`rwxst`(read,write,execute,SGID,SBIT)
   * `-R` recursion for file
-* `chown [name]:[groupname] file` change group of file
-
-  * `-R` recursion for file
+* `chown [name]:[groupname] [file]` change group of file
+* `-R` recursion for file
 
 ## secret permission
 
@@ -251,10 +250,42 @@
   * `-k` delete default group permission
   * `-R` use regressionei
 
-## SSH
+## Secure Shell (SSH)
 
 1. `apt install openssh-server`create SSH server
 2. `server ssh status` check whether SSH is open
 3. `server ssh start` start SSH server
 4. `ssh root@[ip address]` use SSH login
+
+## File Transfer Protocol (FTP)
+
+1. `apt install vsftpd` install vsftpd
+2. `useradd [ftp name] -md [ftp dir] -s /sbin/nologin` create FTP user and FTP file
+3. `chown -R [ftp name]:[groupname] [ftp dir]` change FTP permission
+4. `passwd [ftp name]`set FTP password
+5. `whereis vsftpd` find **vsftpd.conf** to set vsftpd
+6. `service vsftpd status` check FTP status
+7. `service vsftpd start` FTP service start
+8. `ftp [ip address] `login ftp 
+
+### FTP COMMAND
+
+| bye or close or quit | Terminates an FTP connection.                                |
+| :------------------: | :----------------------------------------------------------- |
+|          cd          | Changes the current working directory on the FTP host server. |
+|         cwd          | Changes the current directory to the specified remote directory. |
+|         dir          | Requests a directory of files uploaded or available for download. |
+|         get          | Downloads a single file.                                     |
+|          ls          | Requests a list of file names uploaded or available for download. |
+|         mget         | Interactively downloads multiple files.                      |
+|         mput         | Interactively uploads multiple files.                        |
+|         open         | Starts an FTP connection.                                    |
+|         pasv         | Tells the server to enter passive mode, in which the server waits for the client to establish a connection rather than attempting to connect to a port the client specifies. |
+|         put          | Uploads a single file.                                       |
+|         pwd          | Queries the current working directory.                       |
+|         ren          | Renames or moves a file.                                     |
+|         site         | Executes a site-specific command.                            |
+|         type         | Sets the file transfer mode:ASCIIBinary                      |
+
+
 
