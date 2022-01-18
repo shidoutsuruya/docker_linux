@@ -1,6 +1,6 @@
-## ubuntu command
+# ubuntu command
 
-# system info
+## system info
 
 * `echo [str]` say hello
   * `echo $DISPLAY`
@@ -250,3 +250,11 @@
   * `-d g:[GROUPNAME]:[rwx`] set default group permission
   * `-k` delete default group permission
   * `-R` use regressionei
+
+## SSH
+
+1. `apt install openssh-server`create SSH server
+2. `server ssh status` check whether SSH is open
+3. `server ssh start` start SSH server
+4. `ssh root@[ip address]` use SSH login
+

@@ -1,10 +1,8 @@
-Docker
+# Docker
 
 * `docker login` log in docker repo
 * `docker system info` check docker information
 * `docker --version` or`docker -v` check docker version
-* `docker network ls` see the network configuration
-* `docker network create [name]`create new network(base on bridge)
 * `docker port [container]` set container port
 ## Image
 
@@ -55,7 +53,7 @@ Docker
 * `docker rename [old_name] [new name]` rename the container
 * `docker cp [container]:[file_path] [local]` copy file between local and container
 
-![img](C:\Users\max21\Desktop\Python\docker\docker.drawio.png)
+![img](C:\Users\max21\Desktop\Python\docker_linux\docker.drawio.png)
 
 ## Volume
 
@@ -64,3 +62,11 @@ Docker
 * `docker volume inspect [volume]` see volume info
 * `docker volume rm [volume]` remove volume
 * `docker volume prune` remove volume not used in container
+
+## network
+
+* `docker network ls` see the network configuration
+* `docker network create [name]`create new network(base on bridge)
+* `docker network inspect [name]` see network
+* `docker network connect [name] [container]`connect container into network
+* `docker network disconnect [name] [container]` disconnect container from network
