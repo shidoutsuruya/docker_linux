@@ -2,8 +2,9 @@
 
 * `docker login` log in docker repo
 * `docker system info` check docker information
-* `docker --version` or`docker -v` check docker version
+* `docker --version` or `docker -v` check docker version
 * `docker port [container]` set container port
+
 ## Image
 
 * `docker image ls`  check download images
@@ -40,6 +41,7 @@
   * `-v [local_path]:[container_path]` use volume to map with the container directory and local directory
   * `--network [network]` set WLAN
 * `docker attach [container]` go into container
+* `docker exec -it [container] bash` go into container interface
 * `docker start [container]` start container
 * `docker container stop [container]` stop container
 * `docker container rm [container]` remove container

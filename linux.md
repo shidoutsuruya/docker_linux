@@ -23,7 +23,7 @@
 * `history` command history
 * `sosreport `collect system info to diagnose
 * `whereis [command]` see command location
-  * all command store in`/usr/bin`
+  * all command store in `/usr/bin`
 
 ## work place
 
@@ -65,7 +65,8 @@
 * `mv [file1] [file2]` cut file(if file1 and file2 have same directory ->rename)
 * `rm [file]` remove file
 
-  * `-rf` reinforce`br`
+  * `-rf` reinforce `br`
+  * `-r [dirname]` remove directory
 * `dd if=[file] of=[file] `copy file with special limitation
 
   * `count=[int] bs=[int M]` block number and block size
@@ -173,7 +174,7 @@
   * `-e [YYYY-MM-DD]` expire time
   * `-u [int]` user id
   * `-g [groupname]` add the user in some group
-  * `-s [dir]` terminal select(usually`/bin/bash`)
+  * `-s [dir]` terminal select(usually `/bin/bash`)
 * `id [name]` see user info
 * `cat /etc/passwd` see all user
 * `cat /etc/shadow` see user password
@@ -210,7 +211,7 @@
   + trick: move password when using sudo
     1. `whereis [command]`***command path***
     2. `visudo`
-    3. add`[command] ALL=NOPASSWD:[command path]`
+    3. add `[command] ALL=NOPASSWD:[command path]`
 * `chmod WhoWhatWhich [file]` change mode of file
 
   * Who:`ugoa`(user,group,other,all)
@@ -253,8 +254,8 @@
 ## Secure Shell (SSH)
 
 1. `apt install openssh-server`create SSH server
-2. `server ssh status` check whether SSH is open
-3. `server ssh start` start SSH server
+2. `service ssh status` check whether SSH is open
+3. `service ssh start` start SSH server
 4. `ssh root@[ip address]` use SSH login
 
 ## File Transfer Protocol (FTP)
@@ -266,7 +267,7 @@
 5. `whereis vsftpd` find **vsftpd.conf** to set vsftpd
 6. `service vsftpd status` check FTP status
 7. `service vsftpd start` FTP service start
-8. `ftp [ip address] `login ftp 
+8. `ftp [ip address] `login ftp
 
 ### FTP COMMAND
 
