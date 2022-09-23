@@ -72,3 +72,4 @@
 * `docker network inspect [name]` see network
 * `docker network connect [name] [container]`connect container into network
 * `docker network disconnect [name] [container]` disconnect container from network
+* `docker network rm [name]` remove network
